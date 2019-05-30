@@ -26,6 +26,7 @@ admin.initializeApp({ credential: admin.credential.cert(config) });
 
 router.post("/firebase", async ({ body }, res) => {
   // deconstruct access token
+  console.log("test its in BE");
   const { accessToken } = body.user.stsTokenManager;
   try {
     // verify access token with Firebase admin.
