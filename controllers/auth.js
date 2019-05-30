@@ -51,7 +51,7 @@ router.post("/firebase", async ({ body }, res) => {
     };
 
     // First we check if the email belongs to an exisitng user
-    console.log("email-51", email);
+    console.log("email-51", userObj);
     const [existingUser] = await Users.findBy({ email });
     // If true we generate a token and return it back to the client
     if (existingUser) {
