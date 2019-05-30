@@ -28,6 +28,7 @@ router.post("/firebase", async ({ body }, res) => {
   // deconstruct access token
   console.log("test its in BE");
   const { accessToken } = body.user.stsTokenManager;
+  console.log("test2");
   try {
     // verify access token with Firebase admin.
     const {
@@ -35,6 +36,7 @@ router.post("/firebase", async ({ body }, res) => {
       name: fullName,
       picture: profilePic
     } = await admin.auth().verifyIdToken(accessToken);
+    console.log("test3");
     // desconstructed variables form the userObj to be inserted into Users Model
     const userObj = {
       teamId: null,
