@@ -18,7 +18,7 @@
 		"cors": "^2.8.5",
 		"date-fns": "^1.30.1",
 		"dotenv": "^7.0.0",
-		"express": "^4.16.4",
+		"express": "^4.17.3",
 		"faker": "^4.1.0",
 		"firebase-admin": "^7.3.0",
 		"helmet": "^3.16.0",
